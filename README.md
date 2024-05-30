@@ -8,3 +8,4 @@
 - [驱动编译 - 缺少Module.symvers文件](https://www.jianshu.com/p/05450481c10e)
 - [insmod加载内核模块后报错，Invalid module format](https://blog.csdn.net/lijunnanxcx/article/details/104714202)
 - [linux 内核模块 编译绕过insmod版本检查](https://blog.csdn.net/whatday/article/details/108865961)
+- [Linux强制卸载内核模块(由于驱动异常导致rmmod不能卸载)](https://blog.csdn.net/gatieme/article/details/75108154)
