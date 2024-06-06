@@ -20,3 +20,5 @@
 - [Linux如何重复执行命令每隔几秒或者每隔几分钟](https://www.cnblogs.com/Hackerman/p/16032582.html)
 - [Linux 物理卷(PV)、逻辑卷(LV)、卷组(VG)管理](https://www.cnblogs.com/lijiaman/p/12885649.html)
 - [VMware设置CentOS7系统磁盘扩容](https://blog.csdn.net/weixin_43744059/article/details/109612543)
+- [嵌入式Linux：提升VMware虚拟机运行速度的方法](https://cloud.tencent.com/developer/article/2375523)
+- [Vmware核心处理器及内核数量相关概念](https://www.cnblogs.com/gambler/p/13227652.html)
