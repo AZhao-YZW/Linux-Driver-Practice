@@ -2,7 +2,7 @@
 1. 熟悉常见类型linux驱动编写
 
 # 注意事项
-1. 在VMWare中运行CentOS 7时，使用图形界面调出的Terminal，不要长按上/下键，否则会引起系统卡死。更好的方法是远程ssh连接CentOS 7操作，这样更安全。
+1. 在VMWare中运行CentOS 7时，使用图形界面调出的Terminal，不要长按上/下键，否则会引起系统卡死。更好的方法是远程ssh连接CentOS 7操作，这样更安全。并且，VMWare选择12个内核会出现此情况，而选择8个内核则不会。网络上说是Windows的Hyper-V启用的问题，但实测是和选择内核数量有关，怀疑是VMWare或者CentOS 7对某些数量内核兼容性问题。
 2. VMWare配置虚拟机网络IP最好用静态IP，方便ssh远程连接
 
 # 参考资料
@@ -27,8 +27,6 @@
 - [嵌入式Linux：提升VMware虚拟机运行速度的方法](https://cloud.tencent.com/developer/article/2375523)
 - [Vmware核心处理器及内核数量相关概念](https://www.cnblogs.com/gambler/p/13227652.html)
 - [centos7分区、挂载、磁盘合并](https://blog.csdn.net/qq_43076825/article/details/117125811)
-- [使用 fdisk 对分区进行扩容（非LVM）](https://blog.csdn.net/sx_1706/article/details/127673151)
-- [运行centos7.9几分钟后centos卡死的问题](https://www.cnblogs.com/jhdhl/p/17078141.html)
-- [CentOS7虚拟机运行一段时间后卡死](https://ask.csdn.net/questions/7870702)
 - [mdadm使用 移除raid](https://blog.csdn.net/u010953692/article/details/107364357)
-- [解决centos7虚拟机无法上网与网络设置](https://www.jianshu.com/p/f38b1d064e77)
+- [使用 fdisk 对分区进行扩容（非LVM）](https://blog.csdn.net/sx_1706/article/details/127673151)
+- [linux扩容磁盘后，文件系统大小还是没变化](https://blog.csdn.net/qq_41999034/article/details/111031490)

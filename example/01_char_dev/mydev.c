@@ -3,9 +3,11 @@
 #include <linux/fs.h>
 #include <linux/cdev.h>
 #include <linux/slab.h>
+#include <linux/device.h>
 
 static dev_t dev_id;
 static struct cdev *mydev;
+static struct class *mydev_class;
 
 ssize_t mydev_read(struct file *file, char __user *data, size_t size, loff_t * loff)
 {
@@ -28,7 +30,6 @@ int mydev_open(struct inode *inode, struct file *file)
     return 0;
 }
 
-/* 文件操作集合 */
 static struct file_operations mydev_fops = {
 	.owner = THIS_MODULE,
     .read   = mydev_read,
@@ -53,11 +54,17 @@ static __init int mydev_init(void)
     /* 打印申请到的主次设备号 */
     printk("major:%d; minor:%d\n", MAJOR(dev_id), MINOR(dev_id));
 
+	mydev_class = class_create(THIS_MODULE, "mydev");
+	device_create(mydev_class, NULL, dev_id, NULL, "mydev");
+
     return 0;
 }
 
 static __exit void mydev_exit(void)
 {
+    device_destroy(mydev_class, dev_id);
+    class_destroy(mydev_class);
+
     cdev_del(mydev);
     kfree(mydev);
     unregister_chrdev_region(dev_id, 1);
