@@ -1,6 +1,10 @@
 # 设计目标
 1. 熟悉常见类型linux驱动编写
 
+# 注意事项
+1. 在VMWare中运行CentOS 7时，使用图形界面调出的Terminal，不要长按上/下键，否则会引起系统卡死。更好的方法是远程ssh连接CentOS 7操作，这样更安全。
+2. VMWare配置虚拟机网络IP最好用静态IP，方便ssh远程连接
+
 # 参考资料
 - [Linux驱动之Ubuntu下下载内核源码——学习笔记（7）](https://blog.csdn.net/lang523493505/article/details/104413086)
 - [Linux驱动入门（一）字符设备驱动基础](https://blog.csdn.net/weixin_42462202/article/details/99887783)
@@ -22,3 +26,9 @@
 - [VMware设置CentOS7系统磁盘扩容](https://blog.csdn.net/weixin_43744059/article/details/109612543)
 - [嵌入式Linux：提升VMware虚拟机运行速度的方法](https://cloud.tencent.com/developer/article/2375523)
 - [Vmware核心处理器及内核数量相关概念](https://www.cnblogs.com/gambler/p/13227652.html)
+- [centos7分区、挂载、磁盘合并](https://blog.csdn.net/qq_43076825/article/details/117125811)
+- [使用 fdisk 对分区进行扩容（非LVM）](https://blog.csdn.net/sx_1706/article/details/127673151)
+- [运行centos7.9几分钟后centos卡死的问题](https://www.cnblogs.com/jhdhl/p/17078141.html)
+- [CentOS7虚拟机运行一段时间后卡死](https://ask.csdn.net/questions/7870702)
+- [mdadm使用 移除raid](https://blog.csdn.net/u010953692/article/details/107364357)
+- [解决centos7虚拟机无法上网与网络设置](https://www.jianshu.com/p/f38b1d064e77)
