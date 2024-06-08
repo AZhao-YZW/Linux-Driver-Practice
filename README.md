@@ -1,11 +1,14 @@
 # 设计目标
 1. 熟悉常见类型linux驱动编写
 2. 开启Linux scsi中层打印，在文件系统上做一些操作，观察这些操作对应的scsi命令
+3. 尝试Linux双系统(CentOS 7 + OpenEuler 24.03)
+4. 树莓派3B+上编写测试主机驱动
 
 # 注意事项
 1. 在VMWare中运行CentOS 7时，使用图形界面调出的Terminal，不要长按上/下键，否则会引起系统卡死。更好的方法是远程ssh连接CentOS 7操作，这样更安全。并且，VMWare选择12个内核会出现此情况，而选择8个内核则不会。网络上说是Windows的Hyper-V启用的问题，但实测是和选择内核数量有关，怀疑是VMWare或者CentOS 7对某些数量内核兼容性问题。
 2. VMWare配置虚拟机网络IP最好用静态IP，方便ssh远程连接
 3. Linux dmesg出现日志'/dev/kmsg buffer overrun, some messages lost'，不确定为啥
+4. Raspberry Pi 3B+: 可采用串口连接，注意红灯闪烁或不亮代表电源适配器供电能力不足，需更换更好的适配器(华为40W充电器，小米120W充电器都可以支持，这里也要注意连线是否接触不良)，还要注意串口硬件连接是否正常(我的电脑的其中一个usb口居然接触不良了，中途还误以为是串口通讯配置问题)
 
 # 参考资料
 - [Linux驱动之Ubuntu下下载内核源码——学习笔记（7）](https://blog.csdn.net/lang523493505/article/details/104413086)
@@ -40,3 +43,21 @@
 - [linux FIO命令详解：磁盘IO测试工具 fio (并简要介绍iostat工具)](https://www.cnblogs.com/chenjunwu/p/14420178.html)
 - [centos7下解决journal日志越来越大的问题](https://cloud.tencent.com/developer/article/1671561)
 - [/dev/kmsg buffer overrun, some messages lost](https://wiki.gentoo.org/wiki/Systemd#.2Fdev.2Fkmsg_buffer_overrun.2C_some_messages_lost)
+- [如何在一台电脑上安装多个Linux发行版](https://blog.csdn.net/u011507599/article/details/52537846)
+- [CentOS 7 分区方案](https://www.cnblogs.com/yogurtwu/p/10717001.html)
+- [Linux分区方案、分区建议及手动分区操作步骤](https://zhiliao.h3c.com/theme/details/213685)
+- [在同一个硬盘上安装多个 Linux 发行版](https://www.cnblogs.com/youxia/p/linux018.html)
+- [CentOS7磁盘管理-分区扩容-使用gparted图形化工具或系统命令](https://www.jianshu.com/p/e5de5f6c3229)
+- [VMware 虚拟SCSI、SATA 和 NVMe 存储控制器条件、限制和兼容性](https://blog.csdn.net/allway2/article/details/121842811)
+- [VMware创建虚拟机时选择是否将虚拟磁盘拆分](https://www.cnblogs.com/realzhangsan/p/17759698.html)
+- [在Linux中，支持哪些文件系统类型？](https://www.cnblogs.com/huangjiabobk/p/18160095)
+- [RaspBerry Pi官网](https://www.raspberrypi.com/)
+- [树莓派官方系统（raspbian）安装及使用教程](https://blog.csdn.net/Yhen1/article/details/120355150)
+- [树莓派开启串口和串口控制台功能](https://lingshunlab.com/book/raspberry-pi/connect-raspberry-pi-terminal-via-serial-port-from-pc)
+- [【持续更新】树莓派启动与故障系列集锦](https://blog.csdn.net/junzhu_beautifulpig/article/details/125947358)
+- [树莓派 ACT LED 指示灯闪烁模式代表的状态](https://shumeipai.nxez.com/2021/05/26/raspberry-pi-act-led-error-patterns.html)
+- [树莓派LED指示灯状态的解释](https://shumeipai.nxez.com/2014/09/30/raspberry-pi-led-status-detail.html)
+- [树莓派四种登录方法详解](https://blog.csdn.net/qq_44333320/article/details/125476095)
+- [树莓派的串口无法接收但是可以发送](https://wenku.csdn.net/answer/895rwxunh9)
+- [关于树莓派3B+串口pi3-miniuart-bt-overlay 与 pi3-miniuart-bt的区别](https://www.cnblogs.com/wuquaaa/p/11922801.html)
+- [树莓派用默认账号和密码登录不上怎么办；修改树莓派的密码](https://blog.csdn.net/l_z_y_000/article/details/129017995)
