@@ -1,7 +1,7 @@
 # 设计目标
 1. 熟悉常见类型linux驱动编写
 2. 开启Linux scsi中层打印，在文件系统上做一些操作，观察这些操作对应的scsi命令
-3. 尝试Linux双系统(CentOS 7 + OpenEuler 24.03)
+3. 尝试Linux双系统(CentOS 7 + OpenEuler 24.03/Ubuntu 24.04)
 4. 树莓派3B+上编写测试主机驱动
 
 # 注意事项
@@ -9,6 +9,7 @@
 2. VMWare配置虚拟机网络IP最好用静态IP，方便ssh远程连接
 3. Linux dmesg出现日志'/dev/kmsg buffer overrun, some messages lost'，不确定为啥
 4. Raspberry Pi 3B+: 可采用串口连接，注意红灯闪烁或不亮代表电源适配器供电能力不足，需更换更好的适配器(华为40W充电器，小米120W充电器都可以支持，这里也要注意连线是否接触不良)，还要注意串口硬件连接是否正常(我的电脑的其中一个usb口居然接触不良了，中途还误以为是串口通讯配置问题)
+5. OpenEuler 24.03安装时选择界面由于网络问题无法使用图形界面，所以用everything的iso避免此问题
 
 # 参考资料
 - [Linux驱动之Ubuntu下下载内核源码——学习笔记（7）](https://blog.csdn.net/lang523493505/article/details/104413086)
@@ -61,3 +62,10 @@
 - [树莓派的串口无法接收但是可以发送](https://wenku.csdn.net/answer/895rwxunh9)
 - [关于树莓派3B+串口pi3-miniuart-bt-overlay 与 pi3-miniuart-bt的区别](https://www.cnblogs.com/wuquaaa/p/11922801.html)
 - [树莓派用默认账号和密码登录不上怎么办；修改树莓派的密码](https://blog.csdn.net/l_z_y_000/article/details/129017995)
+- [通过SSH连接远程服务器运行图形界面程序问题](https://blog.csdn.net/gmriwyf/article/details/129958946)
+- [如何在Linux中缩小LVM大小（逻辑卷调整）](https://www.linuxprobe.com/linux-lvm-reduce.html)
+- [CentOS7下动态调整LVM分区大小的操作步骤](https://cloud.tencent.com/developer/article/1597988)
+- [Linux fuser 命令详解------常用选项fuser功能使用](https://blog.csdn.net/weixin_49889731/article/details/125532304)
+- [重开一贴，总计83个品牌106张内存卡测试，空盘测试评分推荐](https://tieba.baidu.com/p/8404524591)
+- [售后内幕「扩展坞烧主板」是真是假？专业分析彻底揭开背后真相！](https://post.smzdm.com/p/a96nz0we/)
+- [dracut 基本介绍](https://www.cnblogs.com/doscho/p/6269279.html)
