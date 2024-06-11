@@ -9,7 +9,7 @@
 2. VMWare配置虚拟机网络IP最好用静态IP，方便ssh远程连接
 3. Linux dmesg出现日志'/dev/kmsg buffer overrun, some messages lost'，不确定为啥
 4. Raspberry Pi 3B+: 可采用串口连接，注意红灯闪烁或不亮代表电源适配器供电能力不足，需更换更好的适配器(华为40W充电器，小米120W充电器都可以支持，这里也要注意连线是否接触不良)，还要注意串口硬件连接是否正常(我的电脑的其中一个usb口居然接触不良了，中途还误以为是串口通讯配置问题)
-5. OpenEuler 24.03安装时选择界面由于网络问题无法使用图形界面，所以用everything的iso避免此问题
+5. 
 
 # 参考资料
 - [Linux驱动之Ubuntu下下载内核源码——学习笔记（7）](https://blog.csdn.net/lang523493505/article/details/104413086)
@@ -69,3 +69,16 @@
 - [重开一贴，总计83个品牌106张内存卡测试，空盘测试评分推荐](https://tieba.baidu.com/p/8404524591)
 - [售后内幕「扩展坞烧主板」是真是假？专业分析彻底揭开背后真相！](https://post.smzdm.com/p/a96nz0we/)
 - [dracut 基本介绍](https://www.cnblogs.com/doscho/p/6269279.html)
+- [linux中grub，nomodest，quiet等参数的含义，进入启动项之后黑屏的可能原因](https://blog.csdn.net/dair6/article/details/121151562)
+- [关于装linux系统时出现进入dracut界面](https://blog.csdn.net/qq_43261733/article/details/108636552)
+- [对linux下 fdisk 中 primary , extented, logical 分区的理解](https://www.cnblogs.com/gaojian/archive/2012/10/19/2730958.html)
+- [如何让树莓派进入图形界面](http://www.shumeipaiba.com/wanpai/jiaocheng/27.html)
+- [Linux重启网络命令](https://blog.csdn.net/asibity/article/details/100774651)
+- [查看Linux ssh登录、访问记录](https://blog.csdn.net/a1084552614/article/details/120860940)
+- [在Ubuntu上使用恢复模式及Recovery Mode各选项的使用方法](https://blog.csdn.net/qq_36786467/article/details/108156413)
+- [Ubuntu 22.04 won't boot (ALERT! UUID=xxx does not exist. Dropping to a shell)](https://ubuntuforums.org/showthread.php?t=2479761)
+- [深入理解磁盘阵列（RAID）和逻辑卷管理（LVM）技术及应用指南](https://blog.csdn.net/qq_41308872/article/details/133983530)
+- [修改Linux系统UUID的简单方法（Linuxuuid修改）](https://www.idc.net/help/120910)
+- [ubuntu uuid修复](https://blog.csdn.net/nankaihunter/article/details/5472341)
+- [Initramfs/指南](https://wiki.gentoo.org/wiki/Initramfs/Guide/zh-cn)
+- [windows7重装后恢复Ubuntu开机启动项，Ubuntu所在的硬盘uuid改变没法进入Ubuntu系统，解决方法](https://blog.csdn.net/forever1dreamsxx/article/details/8151251)
