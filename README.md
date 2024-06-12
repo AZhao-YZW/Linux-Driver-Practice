@@ -9,7 +9,7 @@
 2. VMWare配置虚拟机网络IP最好用静态IP，方便ssh远程连接
 3. Linux dmesg出现日志'/dev/kmsg buffer overrun, some messages lost'，不确定为啥
 4. Raspberry Pi 3B+: 可采用串口连接，注意红灯闪烁或不亮代表电源适配器供电能力不足，需更换更好的适配器(华为40W充电器，小米120W充电器都可以支持，这里也要注意连线是否接触不良)，还要注意串口硬件连接是否正常(我的电脑的其中一个usb口居然接触不良了，中途还误以为是串口通讯配置问题)
-5. 
+5. 有线网络连接树莓派，若发现电脑未检测到以太网设备，可以重新断电再上电试试
 
 # 参考资料
 - [Linux驱动之Ubuntu下下载内核源码——学习笔记（7）](https://blog.csdn.net/lang523493505/article/details/104413086)
@@ -82,3 +82,12 @@
 - [ubuntu uuid修复](https://blog.csdn.net/nankaihunter/article/details/5472341)
 - [Initramfs/指南](https://wiki.gentoo.org/wiki/Initramfs/Guide/zh-cn)
 - [windows7重装后恢复Ubuntu开机启动项，Ubuntu所在的硬盘uuid改变没法进入Ubuntu系统，解决方法](https://blog.csdn.net/forever1dreamsxx/article/details/8151251)
+- [树莓派 | 通过网线连接笔记本与树莓派，实现SSH连接，并让树莓派能上网（Internet)](https://blog.csdn.net/wallace89/article/details/120473842)
+- [Linux 系统 /var/log/journal/ 垃圾日志清理](https://blog.csdn.net/ithomer/article/details/89530790)
+- [Ubuntu系统下给SD卡分区、格式化](https://blog.csdn.net/qq_52262850/article/details/135490684)
+- [调整树莓派SD卡分区的问题](https://www.starduster.me/2014/05/17/modifiy-the-partition-on-raspberrypi/)
+- [Linux网络配置全攻略：解读/etc/network/interfaces文件的精髓](https://blog.csdn.net/Mrxiao_bo/article/details/138863440)
+- [IP地址、子网掩码、网段、网关的关系](https://blog.csdn.net/Mrxiao_bo/article/details/138863440)
+- [网关、子网掩码、DNS的设置](https://blog.csdn.net/qq_21389711/article/details/124902553)
+- [linux环境下使用route指令设置多个网络连接的优先级(通过修改路由表的默认网关条目)](https://www.cnblogs.com/luoyang712/p/11953256.html)
+- [Linux笔记：Ubuntu18.04有线网络和无线网络的优先级设置](https://blog.csdn.net/weixin_44444810/article/details/124768090)
